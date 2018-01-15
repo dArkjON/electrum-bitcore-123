@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME_ROOT=electrum
+NAME_ROOT=electrum-bitcore
 PYTHON_VERSION=3.5.4
 
 # These settings probably don't need any change
@@ -25,7 +25,7 @@ for repo in electrum electrum-locale electrum-icons; do
 	git checkout master
 	cd ..
     else
-	URL=https://github.com/spesmilo/$repo.git
+	URL=https://github.com/dArkjON/$repo.git
 	git clone -b master $URL $repo
     fi
 done
